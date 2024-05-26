@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <section>
+        <form action="">
+            <h1 id="sur">Survey Form</h1>
+            <div class="intro">
+                <p>Feel free to answer the questions below based on your own experience and opinion. If you're not comfortable answering a particular question, please skip it by answering "No". Every answer would be very appreciated. Thank you for your time.</p>
+            </div>
+
+            <div class="left-side">
+                <h2>Your Name</h2>
+                <input type="text" name="your_name" placeholder="Enter Your Name" required>
+
+                <h2>Your Email Address</h2>
+                <input type="email" name="your_email" placeholder="sbmama801@gmail.com" required>
+
+                <h2>Your Phone Number</h2>
+                <input type="tel" name="your_phone" placeholder="0000000000" required>
+
+                <h2>Where Do You Live?</h2>
+                <select id="state" name="state">
+                    <option value="Odisha">Odisha</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Gujarat">Gujarat</option>
+                </select>
+
+                <div class="age-range">
+                    <h2>Age </h2>
+                    <div  id="age">
+                        <label>
+                            <input type="radio" name="age" value="15-20"> 15-20
+                        </label>
+                      
+                        <label>
+                            <input type="radio" name="age" value="31-40"> 31-40
+                        </label>
+                        <label>
+                            <input type="radio" name="age" value="21-30"> 21-30
+                        </label>
+                        <label>
+                            <input type="radio" name="age" value="prefer-not-to-say"> Prefer not to say
+                        </label>
+                        <label>
+                            <input type="radio" name="age" value="41-50"> 41-50
+                        </label>
+                       
+                    </div>
+                </div>
+
+                <h2>How would you rate your Proficiency in Coding</h2>
+                <div class="radio-group compact">
+                    <label>
+                        <input type="radio" name="proficiency" value="beginner"> Beginner
+                    </label>
+                    <label>
+                        <input type="radio" name="proficiency" value="intermediate"> Intermediate
+                    </label>
+                    <label>
+                        <input type="radio" name="proficiency" value="advanced"> Advanced
+                    </label>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <h2>Have you ever appeared in any coding contest?</h2>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="contest" value="yes"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="contest" value="no"> No
+                    </label>
+                </div>
+
+                <div class="textarea-group">
+                    <h3>Discuss what drives your passion for coding and outline your aspirations in the field</h3>
+                    <textarea name="passion" placeholder="Write about your passion and aspirations..." required></textarea>
+                </div>
+                <div class="textarea-group">
+                    <h3>What are some of the challenges you face while coding</h3>
+                    <textarea name="challenges" placeholder="Describe the challenges you face..." required></textarea>
+                </div>
+                <div class="textarea-group">
+                    <h3>Please list the data structures you have a strong understanding of</h3>
+                    <textarea name="data_structures" placeholder="List the data structures you know..." required></textarea>
+                </div>
+
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>
